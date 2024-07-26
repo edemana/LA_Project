@@ -8,7 +8,8 @@ st.title("Linear Algebra Solver for Homogeneous and Non-homogeneous Systems")
 
 def input_matrix_text_area():
     matrix_input = st.text_area(
-        "Enter the augmented matrix [A | b] as shown:", placeholder="1 2 3\n4 5 6"
+        "Enter the augmented matrix [A | b] as shown (NB: Click the empty background to continue):",
+        placeholder="1 2 3\n4 5 6",
     )
     if matrix_input:
         try:
