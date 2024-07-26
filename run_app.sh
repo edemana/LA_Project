@@ -1,2 +1,2 @@
 #!/bin/bash
-streamlit run your_app.py
+streamlit run matrix_calculator.py
