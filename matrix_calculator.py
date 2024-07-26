@@ -1,3 +1,10 @@
+### Requirement
+#   streamlit
+#   numpy
+#   matplotlib
+#   sympy
+
+
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
