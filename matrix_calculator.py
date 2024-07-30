@@ -105,7 +105,7 @@ def plot_solution(augmented_matrix):
     b = augmented_matrix[:, -1]
 
     if num_vars == 2:
-        x_vals = np.linspace(-10, 10, 400)
+        x_vals = np.linspace(-10, 10, 50)
         plt.figure()
 
         for i in range(A.shape[0]):
@@ -124,8 +124,8 @@ def plot_solution(augmented_matrix):
     elif num_vars == 3:
         fig = plt.figure()
         ax = fig.add_subplot(111, projection="3d")
-        x_vals = np.linspace(-10, 10, 400)
-        y_vals = np.linspace(-10, 10, 400)
+        x_vals = np.linspace(-10, 10, 50)
+        y_vals = np.linspace(-10, 10, 50)
 
         X, Y = np.meshgrid(x_vals, y_vals)
 
