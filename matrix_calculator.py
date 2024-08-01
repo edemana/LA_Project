@@ -130,8 +130,9 @@ def plot_solution(augmented_matrix):
         X, Y = np.meshgrid(x_vals, y_vals)
 
         for i in range(A.shape[0]):
-            Z = (b[i] - A[i, 0] * X - A[i, 1] * Y) / A[i, 2]
-            ax.plot_surface(X, Y, Z, alpha=0.5, label=f"Equation {i+1}")
+            if A[i, 2] !=0:
+                Z = (b[i] - A[i, 0] * X - A[i, 1] * Y) / A[i, 2]
+                ax.plot_surface(X, Y, Z, alpha=0.5, label=f"Equation {i+1}")
 
         ax.set_xlabel("x1")
         ax.set_ylabel("x2")
